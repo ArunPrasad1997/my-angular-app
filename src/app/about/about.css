@@ -1,0 +1,24 @@
+.about-page {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-page-main-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.about-title {
+    color: aqua;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-paragraph {
+    color: chartreuse;
+    font-size: 10px;
+    font-weight: 500;
+}

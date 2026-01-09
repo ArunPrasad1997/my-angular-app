@@ -1,2 +1,32 @@
-<h2>About Page</h2>
-<p>About this application</p>
+<div class="about-page">
+    <h2 class="about-title">{{title}}</h2>
+    <!-- <p class="about-paragraph">{{description}}</p> -->
+    <div class="about-page-main-details">
+
+        <button (click)="changeTitle()">Change Title</button>
+
+        <button (click)="toggleDetails()">Toggle Details</button>
+
+        <input [(ngModel)]="name" placeholder="Enter your name" />
+
+        <p>Hello {{name}}</p>
+    </div>
+
+    <!-- <ul>
+    <li *ngFor="let feature of features">
+        {{features}}
+    </li>
+</ul> -->
+
+    @if(showDetails){
+    <p>This application is built using angular</p>
+    }
+    <ul>
+        @for (feature of features; track $index) {
+        <li>
+            {{feature}}
+        </li>
+        }
+    </ul>
+
+</div>
